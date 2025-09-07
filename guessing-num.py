@@ -1,6 +1,7 @@
+import random
 
 def guessing_game():
-    import random
+
 
     number_to_guess = random.randint(1, 100)
     attempts = 0
@@ -32,5 +33,4 @@ def guessing_game():
     if attempts == max_attempts and guess != number_to_guess:
         print(f"Sorry, you've used all your attempts. The number was {number_to_guess}.")
 
-if __name__ == "__main__":
-    guessing_game()
+guessing_game()
